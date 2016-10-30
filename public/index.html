@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      /*background-color: #DECADE*/
+      background-color: #F2F6D0
+    }
+    #wrapper{
+      width:960px;
+      margin: 0 auto;
+      padding-top: 5%;
+    }
+    .title{
+      text-align: center;
+    }
+    #articles{
+      width:60%;
+      height:700px;
+      display:inline-block;
+      overflow: auto;
+    }
+    #notes{
+      width:30%;
+      float:right;
+    }
+    textarea, input{
+      display:block;
+      width:100%;
+      background-color: #FCF5C7;
+    }
+    input{
+      height:36px;
+      font-size: 24px;
+    }
+    textarea{
+      height:200px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="title">WebScrape Explorer</h1>
+      </div>
+      <!-- Add Note -->
+          <div class="col-md-4">
+            <h1 class="title"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></h1>
+            <div id="notes"></div>
+          </div>
+      <!-- Articles -->
+          <div class="col-md-4">
+            <h1 class="title"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></h1>
+            <div id="articles"></div>
+        </div>
+      <!-- Saved Notes -->
+        <div class="col-md-4">
+           <h1 class="title"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></h1>
+           <div id="saved"></div>
+        </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> <a href="/scrape">Scrape!</button>   
+      </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
