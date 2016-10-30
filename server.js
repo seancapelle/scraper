@@ -162,7 +162,7 @@ app.post('/articles/:id', function(req, res){
 });
 
 
-
+//MONGODB_URI: mongodb://heroku_02s0x6w6:vtp54uth802806jt60jrjjp4ae@ds139267.mlab.com:39267/heroku_02s0x6w6
 
 
 
