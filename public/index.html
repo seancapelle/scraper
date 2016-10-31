@@ -39,9 +39,13 @@
     }
     .glyphicon-arrow-left{
       float: left;
+      color: #ec971f;
+      border-color: #d58512;
     }
     .glyphicon-arrow-right{
       float: right;
+      color: #ec971f;
+      border-color: #d58512;
     }
     .bottom{
       margin: auto;
@@ -84,15 +88,15 @@
                 <h2><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></h2>
                 <br>
                 <br>
-            <div id="articles">
-                
-            </div>
+            <div id="articles"></div>
+            <button type="button" id="checknote" class="btn btn-warning bottom">Check For Notes</button>      
+            
         </div>
       <!-- Saved Notes -->
         <div class="col-md-4">
            <h1 class="title"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></h1>
            <div id="saved"></div>
-           <button type="button" class="btn btn-warning bottom">Delete Note</button> 
+           <button type="button" id="deletenote" class="btn btn-warning bottom">Delete Note</button> 
         </div>
     <div class="row">
     <!-- Scrape button -->

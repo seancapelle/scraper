@@ -23,8 +23,10 @@ app.use(express.static('public'));
 
 
 // Database configuration with mongoose
-//mongoose.connect('mongodb://localhost/hwscraper');
-mongoose.connect('mongodb://heroku_02s0x6w6:vtp54uth802806jt60jrjjp4ae@ds139267.mlab.com:39267/heroku_02s0x6w6');
+mongoose.connect('mongodb://localhost/hwscraper');
+
+//Heroku mongoose connection
+//mongoose.connect('mongodb://heroku_02s0x6w6:vtp54uth802806jt60jrjjp4ae@ds139267.mlab.com:39267/heroku_02s0x6w6');
 
 var db = mongoose.connection;
 
